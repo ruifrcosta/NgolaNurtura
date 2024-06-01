@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/frontend/js/auth.js"></script>
     <title>Ngola Nurtura</title>
     <link rel="stylesheet" href="/frontend/css/style.css" />
   </head>
@@ -16,7 +17,7 @@
       <div class="box">
         <div class="inner-box">
             <div class="forms-wrap">
-
+              
                 <form action="index.html" autocomplete="off" class="sign-in-form">
                     <div class="logo">
                         <img src="./images/Nurtura Logo.png" alt="Ngola Nurtura" />
@@ -58,7 +59,8 @@
                     </div>
                 </form>
 
-                <form action="index.html" autocomplete="off" class="sign-up-form">
+                
+                <form action="/api/auth/register" method="POST" autocomplete="off" class="sign-up-form"> 
                   <div class="logo">
                       <img src="./images/Nurtura Logo.png" alt="Ngola Nurtura" />
                       <h4>Ngola Nurtura</h4>
